@@ -57,6 +57,5 @@ RUN ldd /usr/local/srs/objs/ffmpeg/bin/ffmpeg && \
 # Default workdir and command.
 WORKDIR /usr/local/srs
 ENV SRS_DAEMON=off SRS_IN_DOCKER=on
-CMD ["./objs/srs", "-c", "conf/docker.conf"]
-expose 1935
-
+CMD ["./objs/srs", "-c", "conf/srs.conf"]
+EXPOSE 1935
